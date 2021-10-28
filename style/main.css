@@ -1,0 +1,347 @@
+*{
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Fonts*/
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h6{
+    font-size: 15px;
+}
+
+
+/*container*/
+.container-fluid {width:100%;max-width:none ;padding-left:0;padding-right:0}
+
+/*Navigation*/
+/*Header*/
+.logo img{
+    width: 80px;
+    margin-left:80px;
+    margin-top: 15px;
+ }
+  
+ .header a, .header li {
+     font-family: 'Inter', sans-serif;
+     color: #2b2b2b;
+     text-decoration: none;
+     list-style-type: none;
+     display: inline;
+     padding-left: 30px;
+ }
+ .header .list{
+     display: inline;
+ }
+ 
+ .header li:hover{
+     color: #5D5FEF;
+ }
+ .header a:hover{
+    text-decoration: none;
+}
+ 
+ .nav-container{
+     padding:20px;
+     margin-top: -60px;
+     margin-left:130px;
+ }
+
+ .active{
+     
+     color: #5D5FEF;
+     background-color: #cbcbfd;
+     font-weight: 500;
+     border-radius: 30px;
+     padding: 7px;
+     padding-left: 20px;
+     text-align: center;
+ }
+ a .active {
+     
+    color: #6d6fe7;
+    text-align: left;
+    padding-right: 25px;
+}
+
+ 
+ .userPic{
+     width: 60px;
+     margin-top: -8px;
+     margin-right: 60px;
+     float: left;
+     
+ }
+ .UserProfile{
+    float: right;
+    margin-top: -14px;
+ }
+
+.accountText{
+    float: left;
+    padding: 0;
+    margin-left: -40px;
+   
+}
+.accountText p{
+   margin-top: -30px;
+   font-size: 14px;
+   font-weight: 300;
+}
+.accountText p:hover{
+    color: #5D5FEF;
+ }
+
+ /* GENRE HEADING */
+.heading h2{
+    padding: 20px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 42px;
+}
+/* SECTIONS */
+.carousel{ /* section (eg: comedy) */
+    height: 420px;
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+}
+ 
+.carouselbox{
+    height: 380px;
+    width: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+}
+
+/* @media (min-width: 1000px){
+
+    .carouselbox:hover {
+        overflow: auto;
+    }
+
+} */
+
+
+
+ /*Buttons*/
+ .button1{
+     background-color: #5D5FEF;
+     color: white;
+     border-radius: 20px;
+     text-align: center;
+     width: 200px;
+     padding:10px;
+     cursor: pointer;
+     border: 2px solid #5D5FEF;
+ }
+ .button2{
+    background-color: #ffffff;
+    color: #5D5FEF;
+    border-radius: 20px;
+    border: 2px solid #5D5FEF;
+    text-align: center;
+    width: 200px;
+    padding:10px;
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    margin-top: auto;
+    padding: 20px;
+    padding-left: 50px;
+    background-color: #2b2b2b;
+}
+
+footer p{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+footer img{
+    float:right;
+    width: 65px;
+    padding: 10px;
+    margin-top: -60px;
+
+}
+
+
+
+.row h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 52px;
+}
+
+/*star rating*/
+.white {
+    color: white;
+  }
+  .gray {
+    color: rgb(107, 99, 99);
+  }
+
+  /*Movie buttons*/
+  .movieButton{
+    margin: 0 auto;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    padding-top:7px;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-top: 15px;    
+} 
+
+
+
+/*Media Query*/
+/*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .row h1{
+        font-size: 48px;
+        text-align: center;
+    
+    }
+    .row p{
+        font-size: 14px;
+        text-align: center;
+    }
+    footer{
+        padding-left: 0px;
+        margin-left: -300px;
+ 
+    }
+     .userPic{
+     width: 60px;
+     margin-top: -8px;
+     margin-right: 60px;
+     float: left;
+     
+ }
+ .UserProfile{
+    width: 80px;
+ }
+
+.accountText{
+    margin-left: 0px;
+   
+}
+.accountText h6{
+   display: none;
+ }
+.accountText p{
+   margin-top: -25px;
+   font-size: 12px;
+   
+}
+.accountText p:hover{
+    color: #5D5FEF;
+ }
+
+ /*nav change*/
+ .nav-container li{
+     font-size: 14px;
+ }
+ .active{
+     
+    padding: 6px;
+    padding-left: 18px;
+    
+}
+a .active {
+
+   padding-right: 23px;
+}
+
+h6{
+    font-size: 12px;
+    
+}
+
+.carouselbox{
+    overflow-x: auto !important;
+    scroll-behavior: smooth;  
+}
+}
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 500px){
+
+    .row h1{
+        font-size: 28px;
+        text-align: left;
+    }
+    .row p{
+        font-size: 12px;
+        text-align: left;
+    }
+
+    /*Mobile Footer*/
+    footer{
+        margin-left: 80px;
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 785px;
+        /* Height of the footer*/ 
+        height: 80px;
+        background-color: #2b2b2b;
+        margin: 0px 0px 0px;
+        
+    }
+    
+    footer img{
+        float:left;
+        width: 85px;
+        padding: 20px;
+       
+       
+    
+    }
+    .nav-footer{
+        margin-top: 47px;
+        margin-left: 363px;
+    }
+
+    .carouselbox{
+        overflow-x: auto !important;
+        scroll-behavior: smooth;  
+    }
+  
+}
